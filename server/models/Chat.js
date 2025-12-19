@@ -8,7 +8,7 @@ const ChatSchema = new mongoose.Schema(
     messages: [
       {
         isImage: { type: Boolean, required: true },
-        isPublished: { type: String, default: false },
+        isPublished: { type: Boolean, default: false },
         role: { type: String, required: true },
         content: { type: String, required: true },
         timestamp: { type: Number, required: true },
